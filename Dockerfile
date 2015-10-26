@@ -17,6 +17,8 @@ RUN mkdir /etc/ceph && touch /etc/ceph/ceph.conf
 
 ADD cephdash.sh /usr/local/sbin/cephdash
 
+RUN chmod +x /usr/local/sbin/cephdash
+
 EXPOSE 80
 
 CMD ["cephdash"]
